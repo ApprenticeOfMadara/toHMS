@@ -33,7 +33,7 @@ local function shiftNumbers(secs, mins, hours, format)
 		mins -= 60
 		hours += 1
 	end
-	
+	 
 	hours %= 24
 	
 	local over12
