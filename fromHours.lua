@@ -43,7 +43,7 @@ local function shiftNumbers(secs, mins, hours, format)
 end
 
 -- Main function returned from module
-return function (hours, twelveHourFormat) -- hours as first param and bool as second
+return function (hours: number, twelveHourFormat: boolean)
 	hours = math.floor(hours * 10^5)/10^5
 	
 	local hours, mins, secs = math.modf(hours)
