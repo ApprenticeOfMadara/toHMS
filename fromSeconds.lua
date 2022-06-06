@@ -13,7 +13,7 @@
 	[excuse long variable names]
 ]]
 
-local function toHMS(secs, twelveHourFormat) -- Takes seconds as first param and bool as second
+local function toHMS(secs: number, twelveHourFormat: boolean)
 	secs = math.round(secs) % 86400
 	
 	if not twelveHourFormat then
